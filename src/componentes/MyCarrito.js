@@ -7,6 +7,11 @@ import producto1 from './imagenes1/americano.jpg'
 import producto2 from './imagenes1/muffin.jpg'
 import producto3 from './imagenes1/tarta.jpg'
 import producto4 from './imagenes1/producto2.jpg'
+import  {Menu}  from './menu';
+import { Cabecera } from './cabecera';
+import { Pie } from '../componentes/pie';
+
+
 
 const productos = [
   {
@@ -38,9 +43,13 @@ const productos = [
 export const MyCarrito = () => {
   return (
     <div
+    
       className="modal show"
       style={{ display: 'block', position: 'initial' }}
     >
+      <Cabecera/>
+      <Menu/>
+
       <Modal.Dialog>
         <Modal.Header closeButton>
           <Modal.Title>Tu Carrito de Compras</Modal.Title>
@@ -69,6 +78,8 @@ export const MyCarrito = () => {
           <Button variant="primary">Confirmar compra</Button>
         </Modal.Footer>
       </Modal.Dialog>
+<Pie/>
+
     </div>
   );
 };
