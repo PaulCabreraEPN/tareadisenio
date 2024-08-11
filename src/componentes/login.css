@@ -45,13 +45,3 @@ a {
 a:hover {
     text-decoration: underline;
 }
-.combobox-container {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 20px;
-    color: white;
-}
-
-.combobox-container select {
-    max-width: 200px;
-}
