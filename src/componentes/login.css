@@ -45,3 +45,12 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.form-control.error {
+    border-color: red;
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
+}
+
+.text-danger {
+    color: red;
+}

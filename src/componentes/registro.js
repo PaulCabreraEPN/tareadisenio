@@ -99,7 +99,7 @@ const Registro = () => {
                                     <input
                                         type="text"
                                         id="user"
-                                        className="form-control"
+                                        className={`form-control ${errors.user ? 'error' : ''}`}
                                         placeholder="Nombre Apellido"
                                         value={formValues.user}
                                         onChange={handleChange}
@@ -111,7 +111,7 @@ const Registro = () => {
                                     <input
                                         type="email"
                                         id="email"
-                                        className="form-control"
+                                        className={`form-control ${errors.email ? 'error' : ''}`}
                                         placeholder="correo@ejemplo.com"
                                         value={formValues.email}
                                         onChange={handleChange}
@@ -123,7 +123,7 @@ const Registro = () => {
                                     <input
                                         type="text"
                                         id="phone"
-                                        className="form-control"
+                                        className={`form-control ${errors.phone ? 'error' : ''}`}
                                         placeholder="0912345678"
                                         value={formValues.phone}
                                         onChange={handleChange}
@@ -135,7 +135,7 @@ const Registro = () => {
                                     <input
                                         type="password"
                                         id="password"
-                                        className="form-control"
+                                        className={`form-control ${errors.password ? 'error' : ''}`}
                                         placeholder="********"
                                         value={formValues.password}
                                         onChange={handleChange}
@@ -147,7 +147,7 @@ const Registro = () => {
                                     <input
                                         type="password"
                                         id="confirmPassword"
-                                        className="form-control"
+                                        className={`form-control ${errors.confirmPassword ? 'error' : ''}`}
                                         placeholder="********"
                                         value={formValues.confirmPassword}
                                         onChange={handleChange}
