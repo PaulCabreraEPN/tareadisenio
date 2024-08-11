@@ -9,6 +9,7 @@ import Login from './componentes/login.js';
 import { Productos } from './componentes/Productos.js';
 import { Sobre_Nosotros } from './componentes/Sobre_Nosotros.js';
 import { useNavigate } from 'react-router-dom';
+import ContraOlvidada from './componentes/ContraOlvidada.js';
 
 import promo1 from './componentes/imagenes/Promocionales/Promo_bbble_coffee.jpg';
 import promo2 from './componentes/imagenes/Promocionales/Promo_black_drink.jpg';
@@ -81,6 +82,7 @@ function App() {
         <Route path='/' element={<HomePage />} />
         <Route path='/registro' element={<Registro />} />
         <Route path='/login' element={<Login />}  />
+        <Route path="/ContraOlvidada" element={<ContraOlvidada />} />
         <Route path='/Productos' element={<Productos />} />
         <Route path='/Sobre_Nosotros' element={<Sobre_Nosotros />} />
         <Route path='/Promociones' element={<Promociones />} />

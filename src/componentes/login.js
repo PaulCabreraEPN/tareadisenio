@@ -53,13 +53,17 @@ const Login = () => {
         navigate('/registro');
     };
 
+    const handleForgotPasswordClick = () => {
+        navigate('/ContraOlvidada');
+    };
+
     const handleCancel = () => {
         navigate('/');
     };
 
     return (
         <div>
-            <img src={logo} alt="logo" width={'90px'} />
+            <img src={logo} alt="logo" width={'150px'} />
 
             <div>
                 <img src={user} alt="user" className="user" width={'90px'} />
@@ -99,7 +103,7 @@ const Login = () => {
                         <br /><br />
                         <button type="button" onClick={handleCancel} className="btn btn-secondary">Cancelar</button>
                         <br /><br />
-                        <p>Olvidaste tu contraseña?</p>
+                        <p>Olvidaste tu contraseña? <a onClick={handleForgotPasswordClick}>Recuperarla</a></p>
                         <p>No tienes cuenta? <a onClick={handleRegClick}>¡Regístrate!</a></p>
                     </form>
                 </div>
