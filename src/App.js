@@ -16,7 +16,9 @@ import promo3 from './componentes/imagenes/Promocionales/Promo_ice_coffee.jpg';
 import promo4 from './componentes/imagenes/Promocionales/Promo_ice_cream.jpg';
 import { Promociones } from './componentes/Promociones.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Contactos from './componentes/Contactos.js';
 import { MyCarrito } from './componentes/MyCarrito.js';
+
 
 
 
@@ -82,6 +84,7 @@ function App() {
         <Route path='/Productos' element={<Productos />} />
         <Route path='/Sobre_Nosotros' element={<Sobre_Nosotros />} />
         <Route path='/Promociones' element={<Promociones />} />
+        <Route path='/Contactos' element={<Contactos/>} />
         <Route path='/MyCarrito' element={<MyCarrito/>} />
       </Routes>
     </Router>
