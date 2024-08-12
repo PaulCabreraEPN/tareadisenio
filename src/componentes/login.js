@@ -11,6 +11,7 @@ const Login = () => {
         password: '',
     });
     const [errors, setErrors] = useState({});
+    const [successMessage, setSuccessMessage] = useState(''); // Estado para mensaje de éxito
     const navigate = useNavigate();
 
     const handleChange = (e) => {
@@ -45,7 +46,12 @@ const Login = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         if (validateForm()) {
-            navigate('/');
+            setSuccessMessage('Inicio de sesión exitoso');
+            console.log('Inicio de sesión exitoso');
+            setTimeout(() => {
+                setSuccessMessage('');
+                navigate('/');
+            }, 3000);
         }
     };
 
@@ -68,6 +74,7 @@ const Login = () => {
             <div>
                 <img src={user} alt="user" className="user" width={'90px'} />
                 <div className="contenedor-login">
+                    {successMessage && <div className="alert alert-success">{successMessage}</div>}
                     <form onSubmit={handleSubmit}>
                         <div className="mb-3 row">
                             <label htmlFor="email" className="col-sm-2 col-form-label">Usuario</label>

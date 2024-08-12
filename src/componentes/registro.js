@@ -13,6 +13,7 @@ const Registro = () => {
         password: '',
         confirmPassword: '',
     });
+    const [successMessage, setSuccessMessage] = useState('');
 
     const navigate = useNavigate();
 
@@ -75,7 +76,12 @@ const Registro = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         if (validateForm()) {
+            setSuccessMessage('Registro exitoso');
             console.log('Formulario enviado con éxito');
+            setTimeout(() => {
+                setSuccessMessage('');
+                navigate('/');
+            }, 2000);
         }
     };
 
@@ -93,6 +99,7 @@ const Registro = () => {
                     <div className="card">
                         <div className="card-body">
                             <h2 className="text-center mb-4">Crea tu cuenta</h2>
+                            {successMessage && <div className="alert alert-success">{successMessage}</div>}
                             <form id="quiz-form" onSubmit={handleSubmit}>
                                 <div className="form-group">
                                     <label htmlFor="user">Nombre</label>
