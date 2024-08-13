@@ -9,6 +9,7 @@ import Login from './componentes/login.js';
 import { Productos } from './componentes/Productos.js';
 import { Sobre_Nosotros } from './componentes/Sobre_Nosotros.js';
 import { useNavigate } from 'react-router-dom';
+import ContraOlvidada from './componentes/ContraOlvidada.js';
 
 import promo1 from './componentes/imagenes/Promocionales/Promo_bbble_coffee.jpg';
 import promo2 from './componentes/imagenes/Promocionales/Promo_black_drink.jpg';
@@ -16,7 +17,9 @@ import promo3 from './componentes/imagenes/Promocionales/Promo_ice_coffee.jpg';
 import promo4 from './componentes/imagenes/Promocionales/Promo_ice_cream.jpg';
 import { Promociones } from './componentes/Promociones.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Contactos from './componentes/Contactos.js';
 import { MyCarrito } from './componentes/MyCarrito.js';
+
 
 
 
@@ -79,9 +82,11 @@ function App() {
         <Route path='/' element={<HomePage />} />
         <Route path='/registro' element={<Registro />} />
         <Route path='/login' element={<Login />}  />
+        <Route path="/ContraOlvidada" element={<ContraOlvidada />} />
         <Route path='/Productos' element={<Productos />} />
         <Route path='/Sobre_Nosotros' element={<Sobre_Nosotros />} />
         <Route path='/Promociones' element={<Promociones />} />
+        <Route path='/Contactos' element={<Contactos/>} />
         <Route path='/MyCarrito' element={<MyCarrito/>} />
       </Routes>
     </Router>

@@ -1,0 +1,15 @@
+.container-contactos{
+    color: #fff;
+}
+
+.titulo{
+    color: #DDAE64;
+}
+
+.boton{
+    background-color: #DDAE64;
+}
+
+.boton:hover{
+    background-color: #c2821c;
+}

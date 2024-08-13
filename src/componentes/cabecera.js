@@ -28,6 +28,10 @@ export const Cabecera = () => {
     navigate('/' );
   };
 
+  const handleClick = () =>{
+    navigate('/Contactos')
+  }
+
   return (
     
     <Navbar expand="lg" className='navbar navbar-dark'>
@@ -42,7 +46,7 @@ export const Cabecera = () => {
             <Nav.Link className="nav-link-custom" onClick={handleLoginClickPro} id='secciones'>Menú</Nav.Link>
             <Nav.Link className="nav-link-custom" onClick={handleLoginClickProm} id='secciones'>Promociones</Nav.Link>
             <Nav.Link className="nav-link-custom" onClick={handleLoginClickSob} id='secciones'>Sobre Nosotros</Nav.Link>
-            <Nav.Link className="nav-link-custom" href="#pricing" id='secciones'>Contactos</Nav.Link>
+            <Nav.Link className='nav-link-custom' onClick={handleClick} id='secciones'>Contactos</Nav.Link>
           </Nav>
           <Form inline className="my-2 my-lg-0">
             <FormControl
