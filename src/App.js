@@ -64,7 +64,7 @@ function HomePage() {
         <div className='Invitacion'>
           <h1>Conoce nuestro menú</h1>
           <p>Te invitamos a explorar nuestra marca con deliciosos productos</p>
-          <button type='button' className='botones'>Ver Menú</button>
+          <button type='button' className='botones' onClick={handleLoginClickProm} >Ver Menú</button>
         </div>
       </main>
       <Pie />
