@@ -17,7 +17,7 @@ export const Menu = () => {
     <div class='menu'>
         <Navbar className="navbar-custom" variant="dark" expand="lg">
         
-        <Navbar.Brand href="#home">COFFEE & DREAMS</Navbar.Brand>
+        <Navbar.Brand href="https://coffeedreams.vercel.app/">COFFEE & DREAMS</Navbar.Brand>
         <Navbar.Brand href="#home" id='carrito'><a 
               className="ml-3" 
               href="#" 

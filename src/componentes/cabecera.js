@@ -32,13 +32,13 @@ export const Cabecera = () => {
     
     <Navbar expand="lg" className='navbar navbar-dark'>
       
-        <Navbar.Brand href="http://localhost:3000/">
+        <Navbar.Brand href="https://coffeedreams.vercel.app/">
           <img src={logo} alt="Logo" width="150" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link className="nav-link-custom" onclick={handleLoginClickI} id='secciones'>Inicio</Nav.Link>
+            <Nav.Link className="nav-link-custom" href='https://coffeedreams.vercel.app/' id='secciones'>Inicio</Nav.Link>
             <Nav.Link className="nav-link-custom" onClick={handleLoginClickPro} id='secciones'>Menú</Nav.Link>
             <Nav.Link className="nav-link-custom" onClick={handleLoginClickProm} id='secciones'>Promociones</Nav.Link>
             <Nav.Link className="nav-link-custom" onClick={handleLoginClickSob} id='secciones'>Sobre Nosotros</Nav.Link>
